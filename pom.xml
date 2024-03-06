@@ -19,7 +19,7 @@
         <connect.version>2.0.1</connect.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
         <gluonfx.maven.plugin.version>1.0.22</gluonfx.maven.plugin.version>
-        <main.class>cl.MainApp</main.class>
+        <main.class>hellofx.HelloFXML</main.class>
         <app.identifier>${main.class}</app.identifier>
         <app.description>The HelloGluon app</app.description>
         <package.type/>
@@ -35,6 +35,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -52,26 +53,31 @@
             <artifactId>charm-glisten</artifactId>
             <version>${charm.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>display</artifactId>
             <version>${attach.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>lifecycle</artifactId>
             <version>${attach.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>statusbar</artifactId>
             <version>${attach.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>storage</artifactId>
             <version>${attach.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>util</artifactId>
@@ -257,6 +263,7 @@
                 <provided.key.alias.password>${env.GLUON_ANDROID_KEYALIAS_PASSWORD}</provided.key.alias.password>
             </properties>
         </profile>
+
         <profile>
             <id>pi</id>
             <properties>
